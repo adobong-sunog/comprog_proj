@@ -1,5 +1,5 @@
 ﻿Public Class CombinedGameForm
-    'overworld variables
+    'location variables
     Private currentX As Integer = 8
     Private currentY As Integer = 20
     Private xmove As Integer = 0
@@ -17,17 +17,15 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Plays title music
         My.Computer.Audio.Play(My.Resources.snowturn_village_3, AudioPlayMode.BackgroundLoop)
-        Me.BackgroundImage = My.Resources.sample_title
+        Me.BackgroundImage = My.Resources.intro1_bg
         'Sets the initial player fighter team
-        person.setFighter(0, New Fighter("Lu", species.getSpecieByIndex(0), 35, moves.getMoveByIndex(0), moves.getMoveByIndex(1)))
+        person.setFighter(0, New Fighter("Lou", species.getSpecieByIndex(0), 35, moves.getMoveByIndex(0), moves.getMoveByIndex(1)))
 
-        'Hides intial hud items
+        'Hide intial hud items
         levelPlayer.Hide()
         levelEnemy.Hide()
         attack1.Hide()
         attack2.Hide()
-        attack3.Hide()
-        attack4.Hide()
         friendFighterImage.Hide()
         enemyFighterImage.Hide()
         narration.Hide()
@@ -74,10 +72,6 @@
         attack1.Show()
         attack2.Location = New Point(250, 50)
         attack2.Show()
-        attack3.Location = New Point(330, 50)
-        attack3.Show()
-        attack4.Location = New Point(410, 50)
-        attack4.Show()
 
         ' Sets up the healthbars
         setvals(enemyHealthBar, playerHealthBar)
@@ -113,8 +107,6 @@
                 narration.Hide()
                 attack1.Hide()
                 attack2.Hide()
-                attack3.Hide()
-                attack4.Hide()
                 friendFighterImage.Hide()
                 enemyFighterImage.Hide()
                 levelPlayer.Hide()
@@ -123,7 +115,7 @@
 
                 My.Computer.Audio.Stop()
                 Label1.Show()
-                Label1.Text = "Game over."
+                Label1.Text = "You lost."
                 While battle = True
                     Application.DoEvents()
                 End While
@@ -147,11 +139,11 @@
         enemyFighterImage.Hide()
         levelPlayer.Hide()
         levelEnemy.Hide()
-        Me.BackgroundImage = My.Resources.sample_loading_screen
+        Me.BackgroundImage = My.Resources.loading_screen
 
 
         If enemyFighterTEST.GetSpecie.getSpeciesName = "Devil" Then
-            'Plays once final fight is over.
+            'Plays once Osmort is defeated.
             outro()
         End If
 
@@ -314,7 +306,7 @@
                 End If
             End If
             aPress = False
-            ' NPC AI (Add later)
+            ' NPC AI
 
 
             ' Refresh the screen
@@ -470,14 +462,14 @@
         Label1.Text = "His name is..."
         APressWaiter(5)
         My.Computer.Audio.Play(My.Resources.PageTurn, AudioPlayMode.Background)
-        Me.BackgroundImage = My.Resources.BlobMain
-        Label1.Text = "Lu."
+        Me.BackgroundImage = My.Resources.Main_Lou
+        Label1.Text = "Lou."
         APressWaiter(5)
         My.Computer.Audio.Play(My.Resources.PageTurn, AudioPlayMode.Background)
         Label1.Text = "This, here, is his final fight..."
         APressWaiter(5)
         My.Computer.Audio.Play(My.Resources.PageTurn, AudioPlayMode.Background)
-        Label1.Text = "(WASD to move, J to interact.)"
+        Label1.Text = "Use WASD keys to move and J to interact"
         APressWaiter(5)
         My.Computer.Audio.Play(My.Resources.PageTurn, AudioPlayMode.Background)
 
@@ -490,7 +482,7 @@
         My.Computer.Audio.Stop()
         Label1.Show()
 
-        Label1.Text = "And here you have witnessed."
+        Label1.Text = "And here you have witnessed"
         APressWaiter(5)
         My.Computer.Audio.Play(My.Resources.PageTurn, AudioPlayMode.Background)
         Label1.Text = "The end of his story."
@@ -513,13 +505,11 @@
             ' Intro
             intro()
 
-            ' Initialising the map, starting new game
-
             ' Loads image to show the game is loading
-            Me.BackgroundImage = My.Resources.sample_loading_screen
+            Me.BackgroundImage = My.Resources.loading_screen
             Me.Refresh()
 
-            ' Starts initialising and loading the game
+            ' Start initialising and load the game
             Dim map As New SuperMap
             Dim allMaps As New All_Maps_Overworld
             Dim currentMap As New Map

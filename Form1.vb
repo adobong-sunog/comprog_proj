@@ -125,7 +125,7 @@
 
                 Case "z"
                     ' Goes back to the title image
-                    Me.BackgroundImage = My.Resources.sample_title
+                    Me.BackgroundImage = My.Resources.intro1_bg
                     tempVal = 1
 
                 Case "x", "c"
@@ -134,7 +134,7 @@
                             ' Initialising the map, starting new game
 
                             ' Loads image to show the game is loading
-                            Me.BackgroundImage = My.Resources.sample_loading_screen
+                            Me.BackgroundImage = My.Resources.loading_screen
                             Me.Refresh()
 
                             ' Starts initialising and loading the game

@@ -10,8 +10,8 @@
     Private mud_bottom As New Tile(TestOfGameModeBattleTest.My.Resources.Resources.mud_bottom, True, "Mud", 10, True, getText(3), False)
     Private mud_bottom_Left As New Tile(TestOfGameModeBattleTest.My.Resources.Resources.mud_bottom_left, True, "Mud", 10, True, getText(3), False)
     Private mud_bottom_Right As New Tile(TestOfGameModeBattleTest.My.Resources.Resources.mud_bottom_right, True, "Mud", 10, True, getText(3), False)
-    Private nurse As New Tile(My.Resources.DeGirl, False, "Nurse", 0, True, "Let me heal you.", True)
-    Private devil As New Tile(My.Resources.DeDevil, False, "Osmort", 0, True, "Let us fight, once and for all, Lu!.", True)
+    Private nurse As New Tile(My.Resources.DeGirl, False, "Nurse", 0, True, "Let me heal you Lou.", True)
+    Private devil As New Tile(My.Resources.DeDevil, False, "Osmort", 0, True, "Let us fight, once and for all, Lou!", True)
 
     Public Function GetNurse() As Tile
         Return nurse

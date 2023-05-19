@@ -67,21 +67,21 @@ Partial Class CombinedGameForm
         '
         'attack3
         '
-        Me.attack3.AutoSize = True
-        Me.attack3.Location = New System.Drawing.Point(310, 9)
-        Me.attack3.Name = "attack3"
-        Me.attack3.Size = New System.Drawing.Size(39, 13)
-        Me.attack3.TabIndex = 15
-        Me.attack3.Text = "Label4"
+        'Me.attack3.AutoSize = True
+        'Me.attack3.Location = New System.Drawing.Point(310, 9)
+        'Me.attack3.Name = "attack3"
+        'Me.attack3.Size = New System.Drawing.Size(39, 13)
+        'Me.attack3.TabIndex = 15
+        'Me.attack3.Text = "Label4"
         '
         'attack4
         '
-        Me.attack4.AutoSize = True
-        Me.attack4.Location = New System.Drawing.Point(355, 9)
-        Me.attack4.Name = "attack4"
-        Me.attack4.Size = New System.Drawing.Size(39, 13)
-        Me.attack4.TabIndex = 16
-        Me.attack4.Text = "Label5"
+        'Me.attack4.AutoSize = True
+        'Me.attack4.Location = New System.Drawing.Point(355, 9)
+        'Me.attack4.Name = "attack4"
+        'Me.attack4.Size = New System.Drawing.Size(39, 13)
+        'Me.attack4.TabIndex = 16
+        'Me.attack4.Text = "Label5"
         '
         'narration
         '

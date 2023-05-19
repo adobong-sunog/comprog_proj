@@ -28,7 +28,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.TestOfGameModeBattleTest.My.Resources.Resources.sample_title
+        Me.BackgroundImage = Global.TestOfGameModeBattleTest.My.Resources.Resources.intro1_bg
         Me.ClientSize = New System.Drawing.Size(1264, 682)
         Me.Name = "Form1"
         Me.Text = "Form1"

@@ -1,16 +1,17 @@
 ﻿Public Class SpecieList
     Private species(150) As Specie
 
+    'List of species
     Public Sub New()
-        species(0) = New Specie(100, 49, 45, 65, 65, 50, 50, "Pnadat", My.Resources.Oath_s_Droplet, 111)
-        species(1) = New Specie(50, 60, 60, 50, 70, 80, 50, "Pandara", My.Resources.Oath_s_Droplet, 156)
-        species(2) = New Specie(39, 52, 43, 65, 60, 50, 40, "Panight", My.Resources.Oath_s_Droplet, 156)
-        species(3) = New Specie(39, 52, 43, 65, 60, 50, 40, "Volcanine", My.Resources.Oath_s_Droplet, 156)
-        species(4) = New Specie(39, 52, 43, 65, 60, 50, 40, "Charowl", My.Resources._05_Charowl, 156)
+        species(0) = New Specie(100, 49, 45, 65, 65, 50, 50, "Pnadat", My.Resources.Lou, 111)
+        species(1) = New Specie(50, 60, 60, 50, 70, 80, 50, "Pandara", My.Resources.Lou, 156)
+        species(2) = New Specie(39, 52, 43, 65, 60, 50, 40, "Panight", My.Resources.Lou, 156)
+        species(3) = New Specie(39, 52, 43, 65, 60, 50, 40, "Volcanine", My.Resources.Lou, 156)
+        species(4) = New Specie(39, 52, 43, 65, 60, 50, 40, "Charowl", My.Resources.Goblin, 156)
         species(5) = New Specie(39, 52, 43, 65, 60, 50, 40, "Ivany", My.Resources.fighter2, 156)
-        species(6) = New Specie(39, 52, 43, 65, 60, 50, 40, "Ivany", My.Resources.Oath_s_Droplet, 156)
+        species(6) = New Specie(39, 52, 43, 65, 60, 50, 40, "Ivany", My.Resources.Lou, 156)
         species(7) = New Specie(39, 52, 43, 65, 60, 50, 40, "Ivany", My.Resources.fighter2, 156)
-        species(8) = New Specie(39, 52, 43, 65, 60, 50, 40, "Ivany", My.Resources.Oath_s_Droplet, 156)
+        species(8) = New Specie(39, 52, 43, 65, 60, 50, 40, "Ivany", My.Resources.Lou, 156)
         species(9) = New Specie(39, 52, 43, 65, 60, 50, 40, "French Doormouse", My.Resources.fighter2, 156)
         species(10) = New Specie(39, 52, 43, 65, 60, 50, 40, "Crumleaf", My.Resources.fighter2, 156)
         species(11) = New Specie(39, 52, 43, 65, 60, 50, 40, "Starnite", My.Resources.fighter2, 156)
