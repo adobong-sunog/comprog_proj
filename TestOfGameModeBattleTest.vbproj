@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38EFE036-AA8D-459E-9A1F-CEF34BC69394}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TestOfGameModeBattleTest.My.MyApplication</StartupObject>
+    <RootNamespace>TestOfGameModeBattleTest</RootNamespace>
+    <AssemblyName>TestOfGameModeBattleTest</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TestOfGameModeBattleTest.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TestOfGameModeBattleTest.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Battle Objects\Battle Form.Designer.vb">
+      <DependentUpon>Battle Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Battle Objects\Battle Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Battle Objects\MoveList.vb" />
+    <Compile Include="Battle Objects\MoveSet.vb" />
+    <Compile Include="Battle Objects\SpecieList.vb" />
+    <Compile Include="CombinedGameForm.Designer.vb">
+      <DependentUpon>CombinedGameForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CombinedGameForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Name Entry Test.Designer.vb">
+      <DependentUpon>Name Entry Test.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Name Entry Test.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverWorld Objects\All_Maps_Overworld.vb" />
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="OverWorld Objects\SuperMap.vb" />
+    <Compile Include="OverWorld Objects\Map.vb" />
+    <Compile Include="Player.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Battle Objects\Fighter.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Battle Objects\Move.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Battle Objects\Specie.vb" />
+    <Compile Include="OverWorld Objects\SuperTile.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OverWorld Objects\Tile.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OverWorld Objects\Tileset.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Battle Objects\Battle Form.resx">
+      <DependentUpon>Battle Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CombinedGameForm.resx">
+      <DependentUpon>CombinedGameForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Name Entry Test.resx">
+      <DependentUpon>Name Entry Test.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vegesaur.png" />
+    <None Include="Resources\_shrodinger%27s panther.png" />
+    <None Include="Resources\you lost.wav" />
+    <None Include="Resources\bite hmm.wav" />
+    <None Include="Resources\Enigmatic Hmm..wav" />
+    <None Include="Resources\The Song 2D.wav" />
+    <None Include="Resources\The Song.wav" />
+    <None Include="Resources\snowturn village_3.wav" />
+    <None Include="Resources\nhdndsjkd_2.wav" />
+    <None Include="Resources\new.wav" />
+    <None Include="Resources\Nen.wav" />
+    <None Include="Resources\Lament Of A Forlorn Village_2.wav" />
+    <None Include="Resources\jkjkj_5.wav" />
+    <None Include="Resources\iceland_2.wav" />
+    <None Include="Resources\hi there.wav" />
+    <None Include="Resources\hghghg_3.wav" />
+    <None Include="Resources\funky snowtropolise land mguffin.wav" />
+    <None Include="Resources\PlayerImage.bmp" />
+    <None Include="Resources\sample title.png" />
+    <None Include="Resources\sample loading screen.png" />
+    <None Include="Resources\PlayerImage.png" />
+    <None Include="Resources\f Icon.png" />
+    <None Include="Resources\m icon.png" />
+    <None Include="Resources\PlayerImage1.bmp" />
+    <None Include="Resources\PlayerImage1.png" />
+    <None Include="Resources\m icon1.png" />
+    <None Include="Resources\rock.png" />
+    <None Include="Resources\Tree.png" />
+    <None Include="Resources\Sign.png" />
+    <None Include="Resources\mud bottom.png" />
+    <None Include="Resources\mud bottom_left.png" />
+    <None Include="Resources\mud bottom_right.png" />
+    <None Include="Resources\mud left.png" />
+    <None Include="Resources\mud middle.png" />
+    <None Include="Resources\mud right.png" />
+    <None Include="Resources\mud top.png" />
+    <None Include="Resources\mud top_left.png" />
+    <None Include="Resources\mud top_right.png" />
+    <None Include="Resources\Player new.png" />
+    <None Include="Resources\hawthornIntro.png" />
+    <None Include="Resources\fighter1.png" />
+    <None Include="Resources\fighter2.png" />
+    <None Include="Resources\PlayerGrassDown.png" />
+    <None Include="Resources\PlayerGrassLeft.png" />
+    <None Include="Resources\PlayerGrassRight.png" />
+    <None Include="Resources\PlayerGrassUp.png" />
+    <None Include="Resources\PlayerMudDown.png" />
+    <None Include="Resources\PlayerMudLeft.png" />
+    <None Include="Resources\PlayerMudRight.png" />
+    <None Include="Resources\PlayerMudUp.png" />
+    <None Include="Resources\01 Pandat.png" />
+    <None Include="Resources\02 panda persone idunno.png" />
+    <None Include="Resources\03 Pandat Warrior.png" />
+    <None Include="Resources\04 Volcanine.png" />
+    <None Include="Resources\05 Charowl.png" />
+    <None Include="Resources\09 Flying Rabbit Kangaroo.png" />
+    <None Include="Resources\10 Bugg.png" />
+    <None Include="Resources\11 Cucoonus.png" />
+    <None Include="Resources\12 Goodiba.png" />
+    <None Include="Resources\13 Jackal.png" />
+    <None Include="Resources\14 Jackal King.png" />
+    <None Include="Resources\15 Mountain Frog.png" />
+    <None Include="Resources\16 Oopsilon Mountain Frog.png" />
+    <None Include="Resources\24 Monotrot.png" />
+    <None Include="Resources\25 biscud.png" />
+    <None Include="Resources\99 red balloons.png" />
+    <None Include="Resources\Annoying Parrott.png" />
+    <None Include="Resources\Aqua Pig.png" />
+    <None Include="Resources\Arms-A-Plenty.png" />
+    <None Include="Resources\Baby Hedgehog.png" />
+    <None Include="Resources\Blob.png" />
+    <None Include="Resources\Blue Balon.png" />
+    <None Include="Resources\Budgescree.png" />
+    <None Include="Resources\Catastrut.png" />
+    <None Include="Resources\Cloudy.png" />
+    <None Include="Resources\Cucanny.png" />
+    <None Include="Resources\Cuccoon.png" />
+    <None Include="Resources\Cythe.png" />
+    <None Include="Resources\Dandewither.png" />
+    <None Include="Resources\Dandylion.png" />
+    <None Include="Resources\Dany Lion Seed.png" />
+    <None Include="Resources\Dimensional Wreath.png" />
+    <None Include="Resources\Electric Mouse.png" />
+    <None Include="Resources\Emoctopus.png" />
+    <None Include="Resources\Evilan.png" />
+    <None Include="Resources\Faerie Dog.png" />
+    <None Include="Resources\Felix.png" />
+    <None Include="Resources\Fisch.png" />
+    <None Include="Resources\Flashy Bird.png" />
+    <None Include="Resources\Fox.png" />
+    <None Include="Resources\Ghost Face.png" />
+    <None Include="Resources\Horn Fairy.png" />
+    <None Include="Resources\Hound.png" />
+    <None Include="Resources\Hula Cherub.png" />
+    <None Include="Resources\Jelly Squid.png" />
+    <None Include="Resources\Koala Beast.png" />
+    <None Include="Resources\Koala.png" />
+    <None Include="Resources\Le Sac.png" />
+    <None Include="Resources\Lil%27wing.png" />
+    <None Include="Resources\Merfish.png" />
+    <None Include="Resources\Moonflower.png" />
+    <None Include="Resources\Mountain Chicken.png" />
+    <None Include="Resources\Musical Bird.png" />
+    <None Include="Resources\Nats.png" />
+    <None Include="Resources\Oath%27s Droplet.png" />
+    <None Include="Resources\Ollie.png" />
+    <None Include="Resources\Oopsilon Beak Bug.png" />
+    <None Include="Resources\Paracheep.png" />
+    <None Include="Resources\Pigaqua.png" />
+    <None Include="Resources\Raiin.png" />
+    <None Include="Resources\Rainbow Girafficorn.png" />
+    <None Include="Resources\Rawrr.png" />
+    <None Include="Resources\Seal.png" />
+    <None Include="Resources\Slugipede.png" />
+    <None Include="Resources\Snowbuss.png" />
+    <None Include="Resources\Staffwing.png" />
+    <None Include="Resources\Sunflower.png" />
+    <None Include="Resources\Tapole.png" />
+    <None Include="Resources\Thunderous.png" />
+    <None Include="Resources\DeDevil.png" />
+    <None Include="Resources\DeForest.png" />
+    <None Include="Resources\DeGirl.png" />
+    <None Include="Resources\2_Minute_Thunderstorm-Mike_Koenig-574654058.wav" />
+    <None Include="Resources\Page_Turn-Mark_DiAngelo-1304638748.wav" />
+    <None Include="Resources\05_01_2018 12_43 Office Lens.png" />
+    <None Include="Resources\An Eventful Night.png" />
+    <None Include="Resources\bigger lionstone final.png" />
+    <None Include="Resources\blackness.png" />
+    <None Include="Resources\cathedral image.png" />
+    <None Include="Resources\BlobMain.png" />
+    <Content Include="Resources\treeBase.png" />
+    <Content Include="Resources\Block.png" />
+    <Content Include="Resources\PassTilePic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
